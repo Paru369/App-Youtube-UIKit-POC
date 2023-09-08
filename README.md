@@ -29,9 +29,6 @@ User Interface
 <br>
 <br>
 
-## ✅ Extras
-📱 Splash Screen com animation e DispatchQueue <br>
-
 
 ## 📱 Technologies and knowledges 
 - SwiftUI 
@@ -43,7 +40,11 @@ User Interface
 
 ## 📲 Images
 <img align="center" width="200px" src="https://github.com/Paru369/App-SwiftUI-Combine-Desafio_Final_02-DIO-Santander/blob/main/images/inews.gif"> <img align="center" width="200px" src="https://github.com/Paru369/App-SwiftUI-Combine-Desafio_Final_02-DIO-Santander/blob/main/images/inews1.png"> <img align="center" width="200px" src="https://github.com/Paru369/App-SwiftUI-Combine-Desafio_Final_02-DIO-Santander/blob/main/images/inews2.png"> <img align="center" width="200px" src="https://github.com/Paru369/App-SwiftUI-Combine-Desafio_Final_02-DIO-Santander/blob/main/images/inewserror.png">
-  
+
+
+## Diagram
+<img align="center" width="500px" src="https://github.com/Paru369/App-Youtube-UIKit-V1/blob/main/images/diagram.png"> <img> 
+
   
 ## ☑️ Requirements
 
