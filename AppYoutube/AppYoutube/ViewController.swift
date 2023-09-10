@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, ModelDelegate {
     
     
     @IBOutlet weak var tableView: UITableView!
@@ -16,7 +16,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+       
+        tableView.dataSource = self
         
         model.getVideos()
     }
