@@ -6,12 +6,12 @@
 //
 
 import UIKit
+import WebKit
 
 class VideoTableViewCell: UITableViewCell {
 
     
     @IBOutlet weak var thumbnailImageView: UIImageView!
-    
     
     
     @IBOutlet weak var titleLabel: UILabel!
@@ -33,7 +33,7 @@ class VideoTableViewCell: UITableViewCell {
         
         // Configure the view for the selected state
     }
-        func setCell(_ v:Video) {
+        func setCell(_ v: Video) {
             self.video = v
             // Ensure that we have a video
             
@@ -74,7 +74,7 @@ class VideoTableViewCell: UITableViewCell {
                 }
                     // create the image object
                     let image = UIImage(data: data!)
-                    
+                   
                     // set the image view
                     
                     DispatchQueue.main.async {

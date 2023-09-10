@@ -20,36 +20,40 @@
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="VideoCell" rowHeight="300" translatesAutoresizingMaskIntoConstraints="NO" id="wfb-Zy-zTE" customClass="VideoTableViewCell" customModule="AppYoutube" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="VideoCell" rowHeight="300" translatesAutoresizingMaskIntoConstraints="NO" id="wfb-Zy-zTE" customClass="VideoTableViewCell" customModule="AppYoutube" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wfb-Zy-zTE" id="cWn-kn-6x4">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="300"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mC2-YI-vvs">
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" id="mC2-YI-vvs">
                                                     <rect key="frame" x="20" y="20" width="353" height="280"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="267" verticalHuggingPriority="251" id="hc0-7u-dsG">
-                                                            <rect key="frame" x="0.0" y="0.0" width="353" height="218.33333333333334"/>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="301" verticalHuggingPriority="290" preservesSuperviewLayoutMargins="YES" highlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" id="hc0-7u-dsG">
+                                                            <rect key="frame" x="8" y="8" width="337" height="203.33333333333334"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <color key="backgroundColor" systemColor="linkColor"/>
+                                                            <rect key="contentStretch" x="0.0" y="0.0" width="0.0" height="1"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" secondItem="Luf-eL-znB" secondAttribute="height" multiplier="1280:720" id="0vT-ad-tvz"/>
+                                                                <constraint firstAttribute="width" secondItem="hc0-7u-dsG" secondAttribute="height" multiplier="1280:720" id="QJv-qS-Kr0"/>
                                                             </constraints>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Luf-eL-znB">
-                                                            <rect key="frame" x="0.0" y="228.33333333333334" width="353" height="21.333333333333343"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Luf-eL-znB">
+                                                            <rect key="frame" x="8" y="221.33333333333334" width="337" height="20.333333333333343"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="411-TW-oSF">
-                                                            <rect key="frame" x="0.0" y="259.66666666666669" width="353" height="20.333333333333314"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="411-TW-oSF">
+                                                            <rect key="frame" x="8" y="251.66666666666666" width="337" height="20.333333333333343"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
+                                                    <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="8"/>
                                                 </stackView>
                                             </subviews>
                                             <constraints>
@@ -87,6 +91,9 @@
         </scene>
     </scenes>
     <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
