@@ -77,7 +77,6 @@
 				4168050F2AABF72B007F4D15 /* Models */,
 				416805002AABC4AB007F4D15 /* Assets.xcassets */,
 				416805052AABC4AB007F4D15 /* Info.plist */,
-				4168051E2AAE6B21007F4D15 /* CacheManager.swift */,
 			);
 			path = AppYoutube;
 			sourceTree = "<group>";
@@ -120,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				4168050D2AABF42C007F4D15 /* Constants.swift */,
+				4168051E2AAE6B21007F4D15 /* CacheManager.swift */,
 				416805182AAE2C9B007F4D15 /* VideoTableViewCell.swift */,
 			);
 			path = Helpers;

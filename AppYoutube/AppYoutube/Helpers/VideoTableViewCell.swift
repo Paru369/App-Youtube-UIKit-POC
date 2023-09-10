@@ -41,6 +41,15 @@ class VideoTableViewCell: UITableViewCell {
                 return
             }
             
+            // check the cache before downloading data
+            
+            if let cachedData = CacheManager.getVideoCache(self.video!.thumbnail) {
+                
+                self.thumbnailImageView.image =
+                UIImage(data: cachedData)
+                return
+            }
+            
             // set the title
             self.titleLabel.text = video?.title
             
@@ -68,6 +77,11 @@ class VideoTableViewCell: UITableViewCell {
             let dataTask = session.dataTask(with: url!) { ( data, response, error ) in
                 
                 if error == nil && data != nil {
+                    
+                    
+                    // save video in cache
+                    
+                    CacheManager.setVideoCache(url!.absoluteString, data)
                     
                     if url!.absoluteString != self.video?.thumbnail {
                         return
