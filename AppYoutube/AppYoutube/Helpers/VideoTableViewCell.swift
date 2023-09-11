@@ -13,6 +13,7 @@ class VideoTableViewCell: UITableViewCell {
     
     @IBOutlet weak var thumbnailImageView: UIImageView!
     
+    @IBOutlet weak var testeView: UIImageView!
     
     @IBOutlet weak var titleLabel: UILabel!
     
@@ -45,7 +46,7 @@ class VideoTableViewCell: UITableViewCell {
             
             if let cachedData = CacheManager.getVideoCache(self.video!.thumbnail) {
                 
-                self.thumbnailImageView.image =
+                self.testeView.image =
                 UIImage(data: cachedData)
                 return
             }
@@ -92,7 +93,8 @@ class VideoTableViewCell: UITableViewCell {
                     // set the image view
                     
                     DispatchQueue.main.async {
-                        self.thumbnailImageView.image = image
+                        //self.thumbnailImageView.image = image
+                        self.testeView.image = image
                     }
                     
                 }
