@@ -19,6 +19,7 @@
 		416805152AABFA55007F4D15 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416805142AABFA55007F4D15 /* Response.swift */; };
 		416805192AAE2C9B007F4D15 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416805182AAE2C9B007F4D15 /* VideoTableViewCell.swift */; };
 		4168051F2AAE6B21007F4D15 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4168051E2AAE6B21007F4D15 /* CacheManager.swift */; };
+		416805212AAE7CEE007F4D15 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416805202AAE7CEE007F4D15 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		416805142AABFA55007F4D15 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		416805182AAE2C9B007F4D15 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		4168051E2AAE6B21007F4D15 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		416805202AAE7CEE007F4D15 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				416804FB2AABC4A8007F4D15 /* ViewController.swift */,
+				416805202AAE7CEE007F4D15 /* DetailViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -203,6 +206,7 @@
 				416804F82AABC4A8007F4D15 /* AppDelegate.swift in Sources */,
 				416804FA2AABC4A8007F4D15 /* SceneDelegate.swift in Sources */,
 				416805192AAE2C9B007F4D15 /* VideoTableViewCell.swift in Sources */,
+				416805212AAE7CEE007F4D15 /* DetailViewController.swift in Sources */,
 				416805112AABF73F007F4D15 /* Video.swift in Sources */,
 				416805152AABFA55007F4D15 /* Response.swift in Sources */,
 			);

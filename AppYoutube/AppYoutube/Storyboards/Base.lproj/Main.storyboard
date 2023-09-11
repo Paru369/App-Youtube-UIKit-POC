@@ -67,6 +67,7 @@
                                             <outlet property="dateLabel" destination="411-TW-oSF" id="xkT-jo-Yk9"/>
                                             <outlet property="thumbnailImageView" destination="hc0-7u-dsG" id="DqQ-Ia-jjy"/>
                                             <outlet property="titleLabel" destination="Luf-eL-znB" id="J1S-3n-bSD"/>
+                                            <segue destination="4xb-0c-XnZ" kind="show" id="Rls-Lv-c7y"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -89,8 +90,77 @@
             </objects>
             <point key="canvasLocation" x="104.58015267175573" y="-28.169014084507044"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="dJ6-Se-azg">
+            <objects>
+                <viewController id="4xb-0c-XnZ" customClass="DetailViewController" customModule="AppYoutube" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xka-yI-AED" customClass="De">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="2Ug-Cj-oHh">
+                                <rect key="frame" x="20" y="50" width="353" height="792"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CS4-Fo-Ucp">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SdK-GI-E6N">
+                                        <rect key="frame" x="0.0" y="30.333333333333329" width="353" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0lt-nW-KCP">
+                                        <rect key="frame" x="0.0" y="60.666666666666671" width="353" height="198.66666666666663"/>
+                                        <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="0lt-nW-KCP" secondAttribute="height" multiplier="1280:720" id="FDL-z1-BY3"/>
+                                        </constraints>
+                                        <wkWebViewConfiguration key="configuration">
+                                            <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                            <wkPreferences key="preferences"/>
+                                        </wkWebViewConfiguration>
+                                    </wkWebView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" verticalHuggingPriority="247" verticalCompressionResistancePriority="747" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pel-Kz-yqP">
+                                        <rect key="frame" x="0.0" y="269.33333333333331" width="353" height="522.66666666666674"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="pX7-7g-KUv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pX7-7g-KUv" firstAttribute="bottom" secondItem="2Ug-Cj-oHh" secondAttribute="bottom" id="5x8-Pi-wcc"/>
+                            <constraint firstItem="2Ug-Cj-oHh" firstAttribute="top" secondItem="pX7-7g-KUv" secondAttribute="top" constant="50" id="GAO-dj-q0D"/>
+                            <constraint firstItem="2Ug-Cj-oHh" firstAttribute="leading" secondItem="pX7-7g-KUv" secondAttribute="leading" constant="20" id="RQo-XM-OTj"/>
+                            <constraint firstItem="pX7-7g-KUv" firstAttribute="trailing" secondItem="2Ug-Cj-oHh" secondAttribute="trailing" constant="20" id="i4d-Qw-SOV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Rsh-W6-Zg0"/>
+                    <connections>
+                        <outlet property="dateLabel" destination="SdK-GI-E6N" id="Hzf-ot-VXZ"/>
+                        <outlet property="textView" destination="pel-Kz-yqP" id="V2o-0x-5hq"/>
+                        <outlet property="titleLabel" destination="CS4-Fo-Ucp" id="R8m-lJ-e9u"/>
+                        <outlet property="webView" destination="0lt-nW-KCP" id="cSH-MC-lkC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7xR-7W-w7R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1065" y="-28"/>
+        </scene>
     </scenes>
     <resources>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
