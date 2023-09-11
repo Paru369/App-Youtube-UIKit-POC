@@ -18,9 +18,9 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="2r3-g9-4Fi">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="VideoCell" rowHeight="300" translatesAutoresizingMaskIntoConstraints="NO" id="wfb-Zy-zTE" customClass="VideoTableViewCell" customModule="AppYoutube" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="VideoCell" rowHeight="300" translatesAutoresizingMaskIntoConstraints="NO" id="wfb-Zy-zTE" customClass="VideoTableViewCell" customModule="AppYoutube" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="300"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="wfb-Zy-zTE" id="cWn-kn-6x4">
@@ -63,6 +63,7 @@
                                                 <constraint firstItem="mC2-YI-vvs" firstAttribute="top" secondItem="cWn-kn-6x4" secondAttribute="top" constant="20" id="vwl-eN-xep"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="dateLabel" destination="411-TW-oSF" id="xkT-jo-Yk9"/>
                                             <outlet property="thumbnailImageView" destination="hc0-7u-dsG" id="DqQ-Ia-jjy"/>
@@ -74,7 +75,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
                             <constraint firstItem="2r3-g9-4Fi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="7W7-CI-SBU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2r3-g9-4Fi" secondAttribute="trailing" id="FlC-SZ-xw9"/>
