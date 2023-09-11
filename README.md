@@ -2,7 +2,6 @@
 Repository POC to use Youtube API
 
 
-
 <h1>
     <a href="https://www.dio.me/">
      <img align="center" width="40px" src="https://hermes.digitalinnovation.one/assets/diome/logo-minimized.png"></a>
@@ -31,11 +30,10 @@ User Interface
 
 
 ## 📱 Technologies and knowledges 
-- SwiftUI 
-- MVVM 
+- UIKit
+- Storyboard
 - API: https://api.lil.software/news
-- JSON to struct: https://app.quicktype.io/
-- Package URLImage: https://github.com/dmytro-anokhin/url-image
+- JSON to struct: https://app.quicktype.io
 
 
 ## 📲 Images
